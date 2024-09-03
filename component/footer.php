@@ -24,7 +24,7 @@
       </div>
     </div>
             <div class="les col-md-6 col-sm-7" style="margin:auto;padding: 10px 10px;">          
-            <a href="" > About Us </a>   
+            <a href="#about" > About Us </a>   
             <a href=""> FAQs </a>        
             <a href=""> Privacy </a>     
             <a href=""> Terms of use </a>          
