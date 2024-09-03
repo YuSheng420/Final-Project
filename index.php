@@ -65,7 +65,7 @@ include 'component/dbfun.php';
     <div class="container my-4">
       <div class="row g-3 text-center">
         <div class="col-12 col-md-6 col-lg-3">
-          <button class="btn btn-secondary w-100" style="background-color: #EF9C9C; padding: 20px;">About Us</button>
+          <button class="btn btn-secondary w-100" onclick="window.location.href='#about'" style="background-color: #EF9C9C; padding: 20px;">About Us</button>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
           <button class="btn btn-secondary w-100" style="background-color: #88B9E6; padding: 20px;" onclick="window.location.href='src/category/index.php'">Category</button>
@@ -79,11 +79,11 @@ include 'component/dbfun.php';
       </div>
     </div>
     <div class="about" style="text-align: center;margin: 50px 0px 50px 0px;">
-    <button class="btn btn-secondary w-50" style="background-color: #EF9C9C; padding: 20px;font-size: 30px;">About Us</button>
-    <br>
-    <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit magnam saepe? Impedit vitae qui temporibus dolorem incidunt, pariatur iure dignissimos ducimus sapiente assumenda rem veniam eveniet praesentium porro eligendi placeat officia ut illum modi fuga. Autem quae numquam amet laborum cupiditate, debitis, velit molestias perspiciatis quis, eaque nihil! Quos deleniti fugiat fuga nobis dolores delectus atque vitae hic illum modi ea officiis, explicabo error facilis. Mollitia enim iste earum.</p>
-  </div>
+      <button id="about" class="btn btn-secondary w-50" style="background-color: #EF9C9C; padding: 20px;font-size: 30px;">About Us</button>
+      <br>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit magnam saepe? Impedit vitae qui temporibus dolorem incidunt, pariatur iure dignissimos ducimus sapiente assumenda rem veniam eveniet praesentium porro eligendi placeat officia ut illum modi fuga. Autem quae numquam amet laborum cupiditate, debitis, velit molestias perspiciatis quis, eaque nihil! Quos deleniti fugiat fuga nobis dolores delectus atque vitae hic illum modi ea officiis, explicabo error facilis. Mollitia enim iste earum.</p>
+    </div>
   <br>
   <div>
     <div class="container marketing">
@@ -124,8 +124,8 @@ include 'component/dbfun.php';
         <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum sunt voluptas voluptatem quaerat odit distinctio, maxime omnis dignissimos vel, est possimus sint dolor minus asperiores esse? Ea non omnis nam..</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img src="fp\大士爷\240655314_10216699739000771_5580025763558588481_n.jpg" width="500px" height="500" alt="">
       </div>
     </div>
 
@@ -138,8 +138,8 @@ include 'component/dbfun.php';
         <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint odit veniam delectus consequatur nisi, deleniti obcaecati explicabo quo quod nesciunt dolorum illum debitis cum! Nobis numquam est distinctio temporibus nostrum!</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img src="fp/令旗/164332404_10215930402687844_112718402680892357_n.jpg" width="500px" height="500" alt="">
       </div>
     </div>
 
@@ -152,8 +152,8 @@ include 'component/dbfun.php';
         <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img src="fp/神主牌/WhatsApp Image 2024-08-08 at 4.42.28 PM.jpeg" width="500px" height="500" alt="">
       </div>
     </div>
 
