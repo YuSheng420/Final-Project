@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin Product</title>
+    <title>Admin test Product</title>
 
 
 </head>
