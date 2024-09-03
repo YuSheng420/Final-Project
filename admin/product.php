@@ -1,6 +1,6 @@
 <?php
  
- include "../component/header.php"
+ include "component/header.php"
  
  ?>
 <!DOCTYPE html>
@@ -13,14 +13,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin</title>
+    <title>Admin test Product</title>
 
 
 </head>
 
 <body id="page-top">
 <div class="container-fluid">
-    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+    <h1 class="h3 mb-4 text-gray-800">Product Page</h1>
 </div>
 
 
