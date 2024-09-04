@@ -16,8 +16,49 @@ $class = new event();
   <link href="/Final-Project/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="/Final-Project/assets/vendor/simple-datatables/style.css" rel="stylesheet">
   <link href="/Final-Project/assets/css/style.css" rel="stylesheet">
+  <style>
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 18px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000; /* Ensures it stays on top of other elements */
+        }
+
+        .whatsapp-button img {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .whatsapp-button {
+                bottom: 15px;
+                right: 15px;
+                padding: 8px 12px;
+                font-size: 16px;
+            }
+
+            .whatsapp-button img {
+                width: 18px;
+                height: 18px;
+                margin-right: 8px;
+            }
+        }
+    </style>
 </head>
-<header >
+<a href="https://wa.me/601116498148" class="whatsapp-button" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" width="20" height="20">
+    Chat with us
+</a>
+<header>
   <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light"style="box-shadow: 0px 0px 8px grey;">
     <div class="container-fluid" >
       <!-- <a class="navbar-brand" href="#">Logo</a> -->
