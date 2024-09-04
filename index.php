@@ -125,7 +125,7 @@ include 'component/dbfun.php';
       </div>
       <div class="col-md-5">
         <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
-        <img src="fp\大士爷\240655314_10216699739000771_5580025763558588481_n.jpg" width="500px" height="500" alt="">
+        <img src="fp\大士爷\240655314_10216699739000771_5580025763558588481_n.jpg"class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500px" height="500" alt="">
       </div>
     </div>
 
@@ -139,7 +139,7 @@ include 'component/dbfun.php';
       </div>
       <div class="col-md-5 order-md-1">
         <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
-        <img src="fp/令旗/164332404_10215930402687844_112718402680892357_n.jpg" width="500px" height="500" alt="">
+        <img src="fp/令旗/164332404_10215930402687844_112718402680892357_n.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500px" height="500" alt="">
       </div>
     </div>
 
@@ -153,7 +153,7 @@ include 'component/dbfun.php';
       </div>
       <div class="col-md-5">
         <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
-        <img src="fp/神主牌/WhatsApp Image 2024-08-08 at 4.42.28 PM.jpeg" width="500px" height="500" alt="">
+        <img src="fp/神主牌/WhatsApp Image 2024-08-08 at 4.42.28 PM.jpeg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500px" height="500" alt="">
       </div>
     </div>
 
