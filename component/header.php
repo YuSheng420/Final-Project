@@ -31,7 +31,7 @@ $class = new event();
             display: flex;
             align-items: center;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            z-index: 1000; /* Ensures it stays on top of other elements */
+            z-index: 1000;
         }
 
         .whatsapp-button img {
