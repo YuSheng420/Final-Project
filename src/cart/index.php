@@ -3,10 +3,10 @@
 include '../../component/dbfun.php';
 $class = new event();
 $name = $_SESSION["id"];
-// if (isset($_GET["id"]) && $_GET["id"] !== "") {
+// if (isset($_GET["id"]) && $_GET["action"] == "delete") {
 //   $id = $_GET["id"];
 //   $name = $_SESSION["id"];
-//   $qry = $class->cart($name,$id);
+//   $qry = $class->deletecart($name,$id);
 // }
 
 ?>
@@ -40,37 +40,55 @@ $name = $_SESSION["id"];
     </div>
   </section>
 
-<div class="album py-5 bg-light">
-  <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <div class="container" style="margin: auto;">
+    <div class="row">
     <?php
         $qry = $class->db_qry("SELECT * FROM cart as a INNER JOIN product as b ON a.ct_product=b.p_id WHERE ct_userid = $name");
-        while($row = mysqli_fetch_array($qry)){ ?>
-        <div class="col">
-            <div class="card shadow-sm">
-              <img src="<?=$row["p_image"]?>" class="img-fluid" alt="">
-                <div class="card-body">
-                    <br>
-                    <h2><?=$row["p_name"]?></h2>
-                    <p class="card-text"><?=$row["p_description"]?></p>
-                    <h3 style="color: red;">RM <?=$row["p_price"]?></h3>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Detail</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Remove</button>
-                            <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                        </div>
-                            <!-- <small class="text-muted">9 mins</small> -->
-                    </div>
-                </div>
+        if (mysqli_num_rows($qry) > 0){
+        while($row = mysqli_fetch_array($qry)){ 
+    ?>
+        <div class="p-3" style="border-bottom: 1px solid grey;margin-bottom: 10px;">
+          <div class="row">
+
+            <div class="col-sm-3">
+              <img src="<?=$row["p_image"]?>" class="img-fluid img-thumbnail" alt="">
             </div>
+
+            <div class="col-sm-6">
+              <h2><?=$row["p_name"]?></h2>
+              <h3 style="color: red;">RM <?=$row["p_price"]?> </h3>
+              <h2>Amount :</h2>
+              <input class="form-control w-50" type="number">
+              <br>     
+            </div>
+
+            <div class="col-sm-3">
+              <button type="button" class="btn btn-md btn-outline-secondary">Remove from cart</button>
+            </div>
+          </div>
+        </div>  
+        <?php 
+					}
+        ?>
+        <div class="p-2">
+          <h2>Total : RM</h2>
+          <div>
+            <button type="button" min="1" class="btn btn-lg btn-primary">Buy</button>
+            <button type="button" min="1" class="btn btn-lg btn-danger">Remove all from cart</button>          
+          </div>          
         </div>
+
+
         <?php
-          }
-        ?>  
+						}else{
+        ?>
+        <div style="margin: auto;">
+          <h1>No Item in your cart</h1><br>
+        </div>
+        <?php      
+						}
+			  ?> 
     </div>
-  </div>
 </main>
 
 </div>
@@ -80,4 +98,5 @@ $name = $_SESSION["id"];
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/23267dcdd3.js" crossorigin="anonymous"></script>
 </html>
+
 <?php include '../../component/footer.php'; ?>
