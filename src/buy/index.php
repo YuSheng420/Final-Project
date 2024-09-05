@@ -25,7 +25,7 @@ $class = new event();
 <main>
   <section class="py-5 text-center container">
     <div class="row py-lg-5" style="height: 500px;">
-        
+        test
     </div>
 </section>
 </main>
