@@ -78,7 +78,7 @@ if (isset($_GET['id']) && isset($_GET['action']) && $_GET['action'] == "delete")
           <h2>Total : RM</h2>
           <div>
             <button type="button" min="1" class="btn btn-lg btn-primary" onclick="handerbuy()">Buy</button>
-            <button type="button" min="1" class="btn btn-lg btn-danger">Remove all from cart</button>          
+            <button type="button" min="1" class="btn btn-lg btn-danger">Remove cart</button>          
           </div>          
         </div>
 
