@@ -38,7 +38,7 @@ if (isset($_GET['id']) && isset($_GET['action']) && $_GET['action'] == "cart") {
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">Product List</h1>
-        <p class="lead text-muted">This page include all of our product ,if i want to easy navigate to the product you want , click the category button</p>
+        <p class="lead text-muted">This page include all of our product ,if you want to easy navigate to the product you want , click the category button</p>
         <p>
           <a href="#" class="btn btn-primary my-2" onclick="window.location.href='/Final-Project/index.php'">Back</a>
           <a href="#" class="btn btn-secondary my-2" onclick="window.location.href='/Final-Project/src/category'">Category</a>
@@ -67,7 +67,17 @@ if (isset($_GET['id']) && isset($_GET['action']) && $_GET['action'] == "cart") {
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <button type="button" class="btn btn-sm btn-outline-secondary">Detail</button>
+                            <?php
+                                if (!isset($_SESSION["id"]) || strlen($_SESSION["id"]) == 0) {    
+                            ?>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.location.href='/Final-Project/src/login'">Please login to buy our product</button>
+                            <?php }else{ 
+                            $qry = $class->db_qry("SELECT * FROM user WHERE id = ".$_SESSION["id"]."");
+                            while ($row = mysqli_fetch_array($qry)) {          
+                            ?>
                             <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.location.href='/Final-Project/src/productlist/index.php?id=<?=$row['p_id']?>&action=cart'">Cart</button>
+                            <?php }}?>
+                            <!-- <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.location.href='/Final-Project/src/productlist/index.php?id=<?=$row['p_id']?>&action=cart'">Cart</button> -->
                             <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                         </div>
                             <!-- <small class="text-muted">9 mins</small> -->

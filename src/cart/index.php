@@ -3,11 +3,15 @@
 include '../../component/dbfun.php';
 $class = new event();
 $name = $_SESSION["id"];
-// if (isset($_GET["id"]) && $_GET["action"] == "delete") {
-//   $id = $_GET["id"];
-//   $name = $_SESSION["id"];
-//   $qry = $class->deletecart($name,$id);
-// }
+if (isset($_GET['id']) && isset($_GET['action']) && $_GET['action'] == "delete") {
+  $id = $_GET["id"];
+  if ($qry = $class->delcart($id)) {
+    echo "<script>window.location.href='/Final-Project/src/cart/index.php'</script>";
+} else {
+    echo "<script>alert('We have some problem, Please wait')</script>";
+}
+
+}
 
 ?>
 <!DOCTYPE html> 
@@ -63,7 +67,7 @@ $name = $_SESSION["id"];
             </div>
 
             <div class="col-sm-3">
-              <button type="button" class="btn btn-md btn-outline-secondary">Remove from cart</button>
+              <button type="button" class="btn btn-md btn-outline-secondary" onclick="window.location.href='/Final-Project/src/cart/index.php?id=<?=$row['ct_id']?>&action=delete'">Remove from cart</button>
             </div>
           </div>
         </div>  
@@ -73,7 +77,7 @@ $name = $_SESSION["id"];
         <div class="p-2">
           <h2>Total : RM</h2>
           <div>
-            <button type="button" min="1" class="btn btn-lg btn-primary">Buy</button>
+            <button type="button" min="1" class="btn btn-lg btn-primary" onclick="handerbuy()">Buy</button>
             <button type="button" min="1" class="btn btn-lg btn-danger">Remove all from cart</button>          
           </div>          
         </div>
@@ -95,8 +99,16 @@ $name = $_SESSION["id"];
 <br><br>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/23267dcdd3.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/23267dcdd3.js" crossorigin="anonymous"></script>
+<script>
+  const handerbuy = () => {
+    // const product = document.getElementbyID();
+    localStorage.setItem('cart','yee');
+    window.location.href='/Final-Project/src/buy/index.php';
+  }
+  
+</script>
 </html>
 
 <?php include '../../component/footer.php'; ?>

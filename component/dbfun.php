@@ -55,6 +55,15 @@ class event extends Database {
 		$qry = $this->Conn->query("INSERT INTO cart (ct_product,ct_userid) VALUES ('$name','$id')");
 		return $qry;
 	}
+	public function delcart($id) {
+		$qry = $this->Conn->query("DELETE FROM cart WHERE ct_id = '$id'");
+		if (!$qry) {
+			die("Error executing query: " . $this->Conn->error);
+		}
+		return $qry;
+	}
+	
+	
 	public function checkcart($name, $id) {
 		// Assuming 'ct_product' is the product ID and 'ct_userid' is the user ID
 		$qry = $this->Conn->query("SELECT * FROM cart WHERE ct_product='$id' AND ct_userid='$name'");
